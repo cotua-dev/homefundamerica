@@ -18,7 +18,7 @@ exports[`PrivacyPolicy Component renders 1`] = `
     </h3>
     <p>
       
-                        Manhattan Banc (“Company,” “Manhattan Banc,”
+                        Home Fund America (“Company,” “Home Fund America,”
                         “us,” or “we”) respects the privacy of the
                         visitors to the website (“website” or “site”)
                         and of our clients. This privacy policy
@@ -65,14 +65,14 @@ exports[`PrivacyPolicy Component renders 1`] = `
       <a
         href="/privacy-policy"
       >
-        https://manhattanbanc.com/privacy-policy
+        https://homefundamerica.com/privacy-policy
       </a>
        and
        
       <a
         href="/terms-of-use"
       >
-        https://manhattanbanc.com/terms-of-use
+        https://homefundamerica.com/terms-of-use
       </a>
       
                         please do not provide us with personal information,
@@ -302,7 +302,7 @@ exports[`PrivacyPolicy Component renders 1`] = `
         Vendors who provide employment verification, degree verification, title, document import, or other necessary services;
       </li>
       <li>
-        Manhattan Banc affiliated businesses that provide quality services or products you may be interested in;
+        Home Fund America affiliated businesses that provide quality services or products you may be interested in;
       </li>
       <li>
         For any purpose to which you expressly consent;
@@ -456,7 +456,7 @@ exports[`PrivacyPolicy Component renders 1`] = `
                         co-branding agreement. The sites those links can
                         take you to have their own separate privacy policy
                         and although we seek to protect the integrity of
-                        our site, Manhattan Banc is not liable for the
+                        our site, Home Fund America is not liable for the
                         content and activities of those sites. Your visits
                         and access to such websites is at your own risk.
                         Please note that those other sites may send their
@@ -483,7 +483,7 @@ exports[`PrivacyPolicy Component renders 1`] = `
     </h3>
     <p>
       
-                        Manhattan Banc uses reasonable physical, technical,
+                        Home Fund America uses reasonable physical, technical,
                         and administrative security measures to protect
                         personal information we collect from loss, misuse,
                         unauthorized access, or improper disclosure. For
@@ -509,7 +509,7 @@ exports[`PrivacyPolicy Component renders 1`] = `
     </h3>
     <p>
       
-                        Manhattan Banc intends only persons who are 18
+                        Home Fund America intends only persons who are 18
                         years or older to use this website. Personal
                         registration information submitted by a person
                         under the age of 18 will not be accepted. Any
@@ -517,7 +517,7 @@ exports[`PrivacyPolicy Component renders 1`] = `
                         the age of 18 and gathered (for example, through
                         the use of cookies) during his or her visit
                         may be used as indicated in this policy.
-                        Manhattan Banc is committed to protecting the
+                        Home Fund America is committed to protecting the
                         privacy of children and has no intention of
                         collecting personal data from children under the
                         age of 18. We encourage parents and guardians of
@@ -594,9 +594,9 @@ exports[`PrivacyPolicy Component renders 1`] = `
        or email us at 
        
       <a
-        href="mailto:admin@manhattanbancmortgage.com"
+        href="mailto:admin@homefundamerica.com"
       >
-        admin@manhattanbancmortgage.com
+        admin@homefundamerica.com
       </a>
     </p>
     <p>
@@ -615,9 +615,9 @@ exports[`PrivacyPolicy Component renders 1`] = `
        or email us at 
        
       <a
-        href="mailto:admin@manhattanbancmortgage.com"
+        href="mailto:admin@homefundamerica.com"
       >
-        admin@manhattanbancmortgage.com
+        admin@homefundamerica.com
       </a>
     </p>
     <p>
@@ -628,9 +628,9 @@ exports[`PrivacyPolicy Component renders 1`] = `
                     
        
       <a
-        href="mailto:admin@manhattanbancmortgage.com"
+        href="mailto:admin@homefundamerica.com"
       >
-        admin@manhattanbancmortgage.com
+        admin@homefundamerica.com
       </a>
     </p>
     <p>
@@ -650,9 +650,9 @@ exports[`PrivacyPolicy Component renders 1`] = `
        or email us at 
        
       <a
-        href="mailto:admin@manhattanbancmortgage.com"
+        href="mailto:admin@homefundamerica.com"
       >
-        admin@manhattanbancmortgage.com
+        admin@homefundamerica.com
       </a>
     </p>
     <p>
@@ -683,9 +683,9 @@ exports[`PrivacyPolicy Component renders 1`] = `
                     
        
       <a
-        href="mailto:admin@manhattanbancmortgage.com"
+        href="mailto:admin@homefundamerica.com"
       >
-        admin@manhattanbancmortgage.com
+        admin@homefundamerica.com
       </a>
        and following the directions.
     </p>
@@ -708,9 +708,9 @@ exports[`PrivacyPolicy Component renders 1`] = `
        or email us at 
        
       <a
-        href="mailto:admin@manhattanbancmortgage.com"
+        href="mailto:admin@homefundamerica.com"
       >
-        admin@manhattanbancmortgage.com
+        admin@homefundamerica.com
       </a>
     </p>
     <h3>
@@ -733,9 +733,9 @@ exports[`PrivacyPolicy Component renders 1`] = `
                     
        
       <a
-        href="mailto:admin@manhattanbancmortgage.com"
+        href="mailto:admin@homefundamerica.com"
       >
-        admin@manhattanbancmortgage.com
+        admin@homefundamerica.com
       </a>
       
                         or write Attn: Privacy Compliance Officer,

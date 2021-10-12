@@ -25,14 +25,14 @@ exports[`TermsOfUse Component renders 1`] = `
       <a
         href="/"
       >
-        https://www.manhattanbanc.com
+        https://www.homefundamerica.com
       </a>
       
                         (the “Website” or “Site”) or any services
                         provided in connection with the Site (the
                         “Service”), you agree to abide by these
                         Terms of Use, as they may be amended by
-                        Manhattan Banc (“Company”) from time to time
+                        Home Fund America (“Company”) from time to time
                         in its sole discretion. Company will post
                         a notice on the Site any time these Terms
                         of Use have been changed or otherwise updated.
@@ -314,7 +314,7 @@ exports[`TermsOfUse Component renders 1`] = `
         Steve Murillo, Principle Broker
       </li>
       <li>
-        Manhattan Banc
+        Home Fund America
       </li>
       <li>
         1147 Highland Ave, Manhattan Beach CA 90266
@@ -328,9 +328,9 @@ exports[`TermsOfUse Component renders 1`] = `
       </li>
       <li>
         <a
-          href="mailto:admin@manhattanbancmortgage.com"
+          href="mailto:admin@homefundamerica.com"
         >
-          admin@manhattanbancmortgage.com
+          admin@homefundamerica.com
         </a>
       </li>
     </ul>
@@ -460,7 +460,7 @@ exports[`TermsOfUse Component renders 1`] = `
                         means you have consented in writing to receive SMS
                         communications (text messages) from us. When
                         consenting to messaging notifications, you authorize
-                        Manhattan Banc, our assigns, successors or servicing
+                        Home Fund America, our assigns, successors or servicing
                         agents to send SMS Notifications (as defined below)
                         to any phone number provided to us, our assigns,
                         successors or service agents in connection with your
@@ -594,7 +594,7 @@ exports[`TermsOfUse Component renders 1`] = `
       <a
         href="/"
       >
-        https://www.manhattanbanc.com
+        https://www.homefundamerica.com
       </a>
       
                         or any of its affiliated businesses (collectively
@@ -758,7 +758,7 @@ exports[`TermsOfUse Component renders 1`] = `
     <p>
       
                         All contents of Site or Service are: Copyright © 2020
-                        Manhattan Banc, 1147 Highland Ave. Manhattan Beach Ca,
+                        Home Fund America, 1147 Highland Ave. Manhattan Beach Ca,
                         90266. All rights reserved.
                     
     </p>
