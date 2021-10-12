@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InvestorDSCRMarkup component renders 1`] = `
+<section
+  class="contentWrapper"
+>
+  <article>
+    <h2>
+      What is an Investor DSCR Loan?
+    </h2>
+    <strong>
+      This program is perfect for flexible investors who are self-employed or have other unique financial profiles. All we need to look at for your rental properties is a lease agreement, or income of the property.
+    </strong>
+    <p>
+      MBANC will qualify you based on the cash flow of the property and not your individual income on your tax return
+    </p>
+    <strong>
+      How is DSCR calculated?
+    </strong>
+    <p>
+      The debt service coverage ratio is defined as the Net Operating Income (NOI) divided by Annual Debt Service on the proposed loan. Debt service is just a fancy word that means the loan payments.
+    </p>
+    <p>
+      Debt Service Coverage Ratio = Net Operating Income / Annual Debt Service
+    </p>
+    <h2>
+      Qualification Criteria
+    </h2>
+    <p>
+      <strong>
+        Self-Employed
+      </strong>
+       only
+    </p>
+    <p>
+      <strong>
+        80% LTV
+      </strong>
+       up to a loan amount of $1,000,000.00 with a Min FICO score of 700 (At least an Even DSCR Required)
+    </p>
+    <p>
+      <strong>
+        75% LTV
+      </strong>
+       up to a loan amount of $2,000,000.00 with a Min FICO score of 640 (Negative Debt Service Ratio Permitted)
+    </p>
+    <p>
+      <strong>
+        65% LTV
+      </strong>
+       up to a loan amount of $3,000,000.00 with a Min FICO score of 620 (Negative Debt Service Ratio Permitted)
+    </p>
+    <p>
+      <strong>
+        60% LTV
+      </strong>
+       up to a loan amount of $4,000,000.00 with a Min FICO score of 620 (Negative Debt Service Ratio Permitted)
+    </p>
+    <p>
+      <strong>
+        55% LTV
+      </strong>
+       up to a loan amount of $5,000,000.00 with a Min FICO score of 620 (Negative Debt Service Ratio Permitted)
+    </p>
+    <p>
+      <strong>
+        70% LTV*
+      </strong>
+       Rate and Term and Unlimited Cash Out refinances available
+    </p>
+    <p>
+      <strong>
+        Reserve requirements
+      </strong>
+       are 6 months PITI up to a $1,500,000.00 Loan amount, anything above requires 12 months PITI
+    </p>
+    <p>
+      <strong>
+        Cash Out
+      </strong>
+       can be used as reserves
+    </p>
+    <p>
+      <strong>
+        Cash Vest
+      </strong>
+       in LLC or Corporation
+    </p>
+    <p>
+      Apply Now For True Stated Income
+    </p>
+  </article>
+</section>
+`;

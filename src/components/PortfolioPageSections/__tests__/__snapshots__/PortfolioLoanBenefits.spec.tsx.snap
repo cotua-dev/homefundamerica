@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PortfolioLoanBenefits Component renders 1`] = `
+<section
+  id="portfolioLoanBenefitsSection"
+>
+  <div>
+    <img
+      alt="Portfolio loan benefits image"
+    />
+  </div>
+  <div>
+    <h2>
+      Portfolio Loan Benefits
+    </h2>
+    <strong>
+      
+                        Our Portfolio Loan Program offers many benefits,
+                        including:
+                    
+    </strong>
+    <ul>
+      <li>
+        Loan amounts from $300,000 to $30 million
+      </li>
+      <li>
+        Underwriting flexibility
+      </li>
+      <li>
+        Cross Collateralization that reduces or eliminates down payments
+      </li>
+      <li>
+        Expanded guidelines and specialized features
+      </li>
+      <li>
+        Interest-only options
+      </li>
+      <li>
+        Non-Resident Alien Mortgages
+      </li>
+      <li>
+        Financing options for self-employed borrowers
+      </li>
+      <li>
+        Bridge financing
+      </li>
+      <li>
+        Pledged assets in lieu of cash
+      </li>
+    </ul>
+  </div>
+</section>
+`;

@@ -1,0 +1,171 @@
+section.investorSection {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 900px) {
+        height: 100%;
+    }
+
+    div.contentWrapper {
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 1420px;
+
+        @media screen and (max-width: 900px) {
+            margin: 20px;
+            width: 100%;
+        }
+
+        h3.title {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 36px;
+            color: #1F72C1;
+
+            @media screen and (max-width: 767px) {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+
+        div.detailsWrapper {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            @media screen and (max-width: 900px) {
+                display: none;
+            }
+
+            div.detailsTitlesWrapper {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                height: 100%;
+                margin-right: 20px;
+
+                h2.detailsTitle {
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 60px;
+                    color: #1F72C1;
+                    text-transform: uppercase;
+                    margin: 0;
+                    cursor: pointer;
+                    transition: 0.8s;
+
+                    &:hover {
+                        color: #C41A2F;
+                    }
+
+                    @media screen and (max-width: 1370px) {
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
+
+                    @media screen and (max-width: 1080px) {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            div.detailsContentWrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+
+                div.detailsContent {
+                    color: #FFFFFF;
+                    background-color: #1F72C1;
+                    padding: 38px;
+                    border-radius: 30px;
+                    font-family: 'Inter', Helvetica, sans-serif;
+                    width: 524px;
+
+                    @media screen and (max-width: 1370px) {
+                        padding: 30px;
+                    }
+
+                    @media screen and (max-width: 1080px) {
+                        padding: 15px;
+                    }
+
+                    strong.detailsContentTitle {
+                        font-size: 20px;
+                        font-weight: 800;
+                        line-height: 28px;
+
+                        @media screen and (max-width: 1370px) {
+                            font-size: 18px;
+                        }
+
+                        @media screen and (max-width: 1080px) {
+                            font-size: 12px;
+                        }
+                    }
+
+                    p.detailsContentParagraph {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 28px;
+
+                        @media screen and (max-width: 1370px) {
+                            font-size: 14px;
+                        }
+
+                        @media screen and (max-width: 1080px) {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        details.mobileDetails {
+            display: none;
+
+            @media screen and (max-width: 900px) {
+                display: block;
+            }
+
+            summary.mobileSummary {
+                cursor: pointer;
+                color: #1F72C1;
+                font-size: 30px;
+                font-weight: 700;
+                text-transform: uppercase;
+                transition: 0.8s;
+
+                &:hover {
+                    color: #C41A2F;
+                }
+
+                @media screen and (max-width: 767px) {
+                    font-size: 16px;
+                    margin: 10px 0;
+                }
+            }
+
+            p.mobileDetailsContent {
+                font-size: 16px;
+                font-weight: 400;
+                background-color: #1F72C1;
+                color: #FFFFFF;
+                padding: 20px;
+                border-radius: 18px;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

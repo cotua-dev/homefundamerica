@@ -1,0 +1,8 @@
+section#readyGetStartedSection {
+    height: 30vh;
+
+    @media screen and (max-width: 950px) {
+        text-align: center;
+        height: 100%;
+    }
+}

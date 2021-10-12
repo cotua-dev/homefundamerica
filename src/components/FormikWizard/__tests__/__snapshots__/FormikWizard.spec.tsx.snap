@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormikWizard component renders 1`] = `
+<section>
+  <form
+    action="#"
+  >
+    <div
+      style="opacity: 1; display: flex;"
+    >
+      <h3>
+        What are you looking to do?
+      </h3>
+      <div>
+        <div>
+          <div />
+          <img
+            alt="Purchase image"
+            src="/purchase.svg"
+          />
+          <h5>
+            Purchase
+          </h5>
+        </div>
+        <div>
+          <div />
+          <img
+            alt="Refinance image"
+            src="/refinance.svg"
+          />
+          <h5>
+            Refinance
+          </h5>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div>
+    <button
+      disabled=""
+      type="button"
+    >
+      Next
+    </button>
+  </div>
+</section>
+`;

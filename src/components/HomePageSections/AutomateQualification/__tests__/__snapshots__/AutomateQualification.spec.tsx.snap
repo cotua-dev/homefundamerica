@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AutomateQualification component renders 1`] = `
+<section>
+  <div>
+    <h2>
+      We Made It Fast & Easy
+    </h2>
+    <form
+      action="#"
+    >
+      <label
+        for="learnMore"
+      >
+        Request More Info
+      </label>
+      <select
+        name="learnMore"
+      >
+        <option
+          value=""
+        >
+          Select
+        </option>
+        <option
+          value="fha"
+        >
+          FHA
+        </option>
+        <option
+          value="conventional"
+        >
+          Conventional
+        </option>
+        <option
+          value="va"
+        >
+          VA
+        </option>
+        <option
+          value="non-conventional"
+        >
+          Non-Conventional
+        </option>
+        <option
+          value="jumbo"
+        >
+          Jumbo/Super Jumbo
+        </option>
+        <option
+          value="portfolio"
+        >
+          Portfolio
+        </option>
+        <option
+          value="interest-only"
+        >
+          Interest-Only
+        </option>
+        <option
+          value="commercial"
+        >
+          Commercial
+        </option>
+        <option
+          value="commercial-cannabis"
+        >
+          Commercial Cannabis
+        </option>
+      </select>
+      <label
+        for="firstName"
+      >
+        First Name
+      </label>
+      <input
+        name="firstName"
+        placeholder="First Name"
+        type="text"
+        value=""
+      />
+      <label
+        for="lastName"
+      >
+        Last Name
+      </label>
+      <input
+        name="lastName"
+        placeholder="Last Name"
+        type="text"
+        value=""
+      />
+      <label
+        for="email"
+      >
+        Email
+      </label>
+      <input
+        name="email"
+        placeholder="Enter your e-mail here"
+        type="email"
+        value=""
+      />
+      <label
+        for="phoneNumber"
+      >
+        Phone
+      </label>
+      <input
+        name="phoneNumber"
+        placeholder="Phone"
+        type="tel"
+        value=""
+      />
+      <button
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</section>
+`;

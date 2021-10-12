@@ -1,0 +1,81 @@
+@import '../../../styles/variables';
+
+section#isVALoanRightSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    color: $primaryColor;
+    height: 60vh;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        height: 100%;
+        padding: 40px 10px;
+    }
+
+    div.imageWrapper {
+        img.isVALoanRightImage {
+            width: 500px;
+            height: auto;
+            border-radius: 10px;
+
+            @media screen and (max-width: 600px) {
+                width: 100%;
+            }
+        }
+    }
+
+    div.contentWrapper {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media screen and (max-width: 500px) {
+            width: 100%;
+        }
+
+        h2.title {
+            font-size: 32px;
+
+            @media screen and (max-width: 950px) {
+                font-size: 24px;
+            }
+        }
+
+        p.content,
+        ul.list li.listItem {
+            font-size: 16px;
+
+            @media screen and (max-width: 950px) {
+                font-size: 14px;
+            }
+        }
+
+        ul.list {
+            padding-left: 20px;
+        }
+
+        button.applyButton {
+            border: 0;
+            border-radius: 10px;
+            color: $textColor;
+            font-size: 18px;
+            background-color: $secondaryColor;
+            padding: 15px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: 0.8s;
+
+            &:hover {
+                background-color: $primaryColor;
+            }
+
+            @media screen and (max-width: 1000px) {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+        }
+    }
+}

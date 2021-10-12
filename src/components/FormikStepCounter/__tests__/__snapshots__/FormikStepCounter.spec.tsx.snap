@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormikStepCounter component renders 1`] = `
+<div>
+  0
+   of 
+  0
+</div>
+`;

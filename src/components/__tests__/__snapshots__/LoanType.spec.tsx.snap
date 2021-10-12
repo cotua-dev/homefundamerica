@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoanType Component renders 1`] = `
+<section>
+  <div>
+    <h2>
+      Hello World
+    </h2>
+    <p>
+      This is test content
+    </p>
+    <p>
+      Learn more about something
+      <a
+        href="tel:8888186393"
+      >
+        888-818-6393
+      </a>
+    </p>
+  </div>
+</section>
+`;

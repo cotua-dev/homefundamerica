@@ -1,0 +1,89 @@
+aside.mobileNavWrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 2;
+    margin-top: 90px;
+
+    @media screen and (max-width: 767px) {
+        width: calc(100% - 40px);
+        margin-top: 0;
+        z-index: 10;
+    }
+
+    div.mobileNavHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        width: 100%;
+
+        div.mobileTitle {
+            cursor: pointer;
+
+            img {
+                width: 220px;
+                height: auto;
+            }
+        }
+
+        button.mobileNavCloseButton {
+            background-color: transparent;
+            border: 0;
+            color: #C41A2F;
+            cursor: pointer;
+            font-size: 26px;
+            margin-left: auto;
+        }
+    }
+
+    div.mobileNavBody {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+
+        strong.mobileLinkListTitle {
+            font-size: 18px;
+            font-family: 'Inter', Helvetica, sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #1F72C1;
+            margin: 10px 0;
+        }
+
+        ul.mobileLinkList {
+            list-style: none;
+            margin: 0 0 0 40px;
+            padding: 0;
+
+            li.mobileLinkListItem {
+                margin: 40px 0;
+
+                a.mobileLink {
+                    text-decoration: none;
+                    color: #1F72C1;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    padding: 10px 0;
+                    cursor: pointer;
+                    transition: 0.8s;
+
+                    &:hover {
+                        color: #C41A2F;
+                    }
+                }
+            }
+        }
+    }
+}

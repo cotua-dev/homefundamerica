@@ -1,0 +1,68 @@
+div.actionButtonsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+
+    @media screen and (max-width: 992px) {
+        margin: 10px 0;
+    }
+
+    @media screen and (max-width: 900px) {
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    button.actionButton {
+        width: 200px;
+        height: 50px;
+        font-family: 'Inter', Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        outline: none;
+        border: 1px solid #1F72C1;
+        border-radius: 30px;
+        padding: 10px 20px;
+        margin: 0 20px;
+        cursor: pointer;
+        background-color: #E8F0F8;
+        color: #1F72C1;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: #1F72C1;
+            color: #FFFFFF;
+            transform: translateY(-3px);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &:disabled {
+            border: 1px solid #C41A2F;
+            background-color: #F9E8EA;
+            color: #C41A2F;
+            cursor: initial;
+        }
+
+        @media screen and (max-width: 900px) {
+            margin: 10px 0;
+            padding: 5px;
+        }
+
+        .loadingSpinner {
+            font-size: 24px;
+        }
+    }
+
+    & button.actionButton:not(:first-child) {
+        margin-left: 20px;
+
+        @media screen and (max-width: 900px) {
+            margin: 0;
+        }
+    }
+}

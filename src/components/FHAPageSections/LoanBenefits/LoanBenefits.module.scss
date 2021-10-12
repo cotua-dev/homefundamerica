@@ -1,0 +1,70 @@
+@import '../../../styles/variables';
+
+section#loanBenefitsSection {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 950px) {
+        height: 100%;
+        padding: 40px 10px;
+    }
+
+    div.contentWrapper {
+        h2.loanBenefitsTitle {
+            color: $primaryColor;
+            margin: 0;
+            font-size: 32px;
+            text-align: center;
+
+            @media screen and (max-width: 950px) {
+                font-size: 24px;
+            }
+        }
+
+        div.benefitsWrapper {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+
+            @media screen and (max-width: 950px) {
+                flex-direction: column;
+            }
+
+            div.benefits {
+                &:last-child {
+                    margin-left: 20px;
+                }
+
+                @media screen and (max-width: 950px) {
+                    &:last-child {
+                        margin-left: 0;
+                    }
+                }
+
+                div.benefit {
+                    margin: 10px 0;
+
+                    strong,
+                    .icon {
+                        font-size: 20px;
+
+                        @media screen and (max-width: 950px) {
+                            font-size: 14px;
+                        }
+                    }
+
+                    strong {
+                        color: $primaryColor;
+                    }
+
+                    .icon {
+                        color: $secondaryColor;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

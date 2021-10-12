@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders 1`] = `
+<footer>
+  <div>
+    <div>
+      <div>
+        <img
+          alt="Manhattan Bank Logo"
+        />
+        <p>
+          1147 Highland Ave., Manhattan Beach CA, 90266
+        </p>
+      </div>
+      <div>
+        <div>
+          <img
+            alt="HUD Logo"
+          />
+          <img
+            alt="NMLS Logo"
+          />
+          <img
+            alt="EQUAL Logo"
+          />
+          <img
+            alt="USDA Logo"
+          />
+        </div>
+        <p>
+          NMLS# 236782 BRE# 01114985
+        </p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <strong>
+        Loans
+      </strong>
+      <ul>
+        <li>
+          <a
+            href="/fha"
+          >
+            FHA
+          </a>
+        </li>
+        <li>
+          <a
+            href="/conventional"
+          >
+            Conventional
+          </a>
+        </li>
+        <li>
+          <a
+            href="/non-conventional"
+          >
+            Non-Conventional
+          </a>
+        </li>
+        <li>
+          <a
+            href="/va"
+          >
+            VA
+          </a>
+        </li>
+        <li>
+          <a
+            href="/jumbo"
+          >
+            Jumbo/Super Jumbo
+          </a>
+        </li>
+        <li>
+          <a
+            href="/portfolio"
+          >
+            Portfolio
+          </a>
+        </li>
+        <li>
+          <a
+            href="/interest-only"
+          >
+            Interest-Only
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <strong>
+        About
+      </strong>
+      <ul>
+        <li>
+          <a
+            href="/privacy-policy"
+          >
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          <a
+            href="/terms-of-use"
+          >
+            Terms of Use
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <div>
+      <p>
+        © Manhattan Banc, All rights reserved.
+      </p>
+      <a
+        href="https://cotua.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="COTUA Logo"
+        />
+      </a>
+    </div>
+  </div>
+</footer>
+`;

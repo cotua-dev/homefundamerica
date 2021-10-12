@@ -1,0 +1,89 @@
+@import '../../../styles/variables';
+
+section#vaLoanBenefitsSection {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 950px) {
+        height: 100%;
+        padding: 40px 10px;
+    }
+
+    div.contentWrapper {
+        width: 600px;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        h2.loanBenefitsTitle {
+            color: $primaryColor;
+            margin: 0;
+            font-size: 32px;
+            text-align: center;
+
+            @media screen and (max-width: 950px) {
+                font-size: 24px;
+            }
+        }
+
+        p.content {
+            color: $primaryColor;
+            font-size: 16px;
+
+            @media screen and (max-width: 950px) {
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+
+        div.benefitsWrapper {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+
+            @media screen and (max-width: 950px) {
+                flex-direction: column;
+            }
+
+            div.benefits {
+                div.benefit {
+                    margin: 10px 0;
+
+                    strong,
+                    .icon {
+                        font-size: 20px;
+
+                        @media screen and (max-width: 950px) {
+                            font-size: 14px;
+                        }
+                    }
+
+                    strong {
+                        color: $primaryColor;
+                    }
+
+                    .icon {
+                        color: $secondaryColor;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        strong.service {
+            font-size: 32px;
+            color: $primaryColor;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+            @media screen and (max-width: 950px) {
+                font-size: 24px;
+            }
+        }
+    }
+}

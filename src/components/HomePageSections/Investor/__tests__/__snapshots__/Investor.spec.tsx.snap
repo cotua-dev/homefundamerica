@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Investor component renders 1`] = `
+<section>
+  <div>
+    <h3>
+      Investor? Looking to Purchase or Refinance?
+    </h3>
+    <div>
+      <div>
+        <h2>
+          No Income Check
+        </h2>
+        <h2>
+          Qualify With Rental Income
+        </h2>
+        <h2>
+          Airbnb Properties, OK
+        </h2>
+        <h2>
+          Purchase Up To 80% LTV
+        </h2>
+      </div>
+      <div>
+        <div>
+          <strong>
+            No Income Check
+          </strong>
+          <p>
+            No tax returns, W2s and/or paystubs needed
+          </p>
+        </div>
+      </div>
+    </div>
+    <details>
+      <summary>
+        No Income Check
+      </summary>
+      <p>
+        No tax returns, W2s and/or paystubs needed
+      </p>
+    </details>
+    <details>
+      <summary>
+        Qualify With Rental Income
+      </summary>
+      <p>
+        Use the full cash flow of the property to qualify in lieu of tax returns and/or pay stubs. No income check required
+      </p>
+    </details>
+    <details>
+      <summary>
+        Airbnb Properties, OK
+      </summary>
+      <p>
+        Qualify with your Airbnb income
+      </p>
+    </details>
+    <details>
+      <summary>
+        Purchase Up To 80% LTV
+      </summary>
+      <p>
+        80% LTV up to a loan amount of $1,000,000.00 with a minimum FICO score of 700 (At least an even DSCR required). Cash out up to 70% LTV
+      </p>
+    </details>
+  </div>
+</section>
+`;

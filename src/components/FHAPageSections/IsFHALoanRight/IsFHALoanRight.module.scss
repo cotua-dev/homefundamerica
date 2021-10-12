@@ -1,0 +1,9 @@
+@import '../../../styles/variables';
+
+section#isFHALoanRightSection {
+    height: 60vh;
+
+    @media screen and (max-width: 1000px) {
+        height: 100%;
+    }
+}

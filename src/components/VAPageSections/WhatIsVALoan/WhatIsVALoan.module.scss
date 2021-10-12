@@ -1,0 +1,53 @@
+@import '../../../styles/variables';
+
+section#whatIsVALoanSection {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    background-color: $primaryColor;
+    color: $textColor;
+
+    @media screen and (max-width: 950px) {
+        height: 100%;
+        padding: 40px 10px;
+    }
+
+    div.contentWrapper {
+        width: 600px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+
+        @media screen and (max-width: 950px) {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        h2.title {
+            margin: 0;
+            font-size: 32px;
+
+            @media screen and (max-width: 950px) {
+                font-size: 24px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        p.content {
+            line-height: 24px;
+            margin: 10px 0;
+            font-size: 16px;
+
+            @media screen and (max-width: 950px) {
+                font-size: 14px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}

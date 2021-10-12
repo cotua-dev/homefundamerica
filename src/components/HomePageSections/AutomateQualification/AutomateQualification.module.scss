@@ -1,0 +1,182 @@
+section.automateQualificationSection {
+    height: 100%;
+    background-color: #1F72C1;
+
+    div.contentWrapper {
+        height: 100%;
+        max-width: 1420px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 80px 10px;
+        margin: 0 auto;
+
+        h2.title {
+            font-size: 54px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin: 0;
+            text-transform: uppercase;
+            text-align: center;
+
+            @media screen and (max-width: 767px) {
+                font-size: 32px;
+            }
+        }
+
+        form.requestMoreInfo {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            max-width: 650px;
+            width: 100%;
+
+            label {
+                color: #FFFFFF;
+                font-size: 16px;
+                text-align: left;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            select,
+            input {
+                font-family: 'Inter', Helvetica, sans-serif;
+                font-size: 16px;
+                padding: 15px 10px;
+                margin-bottom: 10px;
+                border: 0;
+                border-radius: 10px;
+            }
+
+            select {
+                width: 100%;
+            }
+
+            input {
+                width: calc(100% - 20px);
+            }
+
+            small.errorWrapper {
+                color: #F56C7C;
+                font-weight: bold;
+            }
+
+            button {
+                margin-top: 20px;
+                cursor: pointer;
+                padding: 10px;
+                border: 1px solid #C41A2F;
+                border-radius: 15px;
+                width: 100%;
+                background-color: #C41A2F;
+                color: #FFFFFF;
+                font-family: 'Inter', Helvetica, sans-serif;
+                font-size: 24px;
+                font-weight: 500;
+                transition: 0.8s;
+
+                &:hover {
+                    background-color: #1F72C1;
+                    border: 1px solid #FFFFFF;
+                }
+            }
+        }
+
+        h4.subtitle {
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 10px;
+            color: #FFFFFF;
+        }
+
+        div.pointsWrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            div.point {
+                width: 320px;
+                height: 250px;
+                border-radius: 30px;
+                margin: 36px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                background-color: #FFFFFF;
+                position: relative;
+                overflow: hidden;
+
+                &:hover div.pointDescriptionWrapper {
+                    margin-top: -26px;
+                    z-index: 1;
+                }
+
+                &:nth-child(2n) div.pointDescriptionWrapper {
+                    background-color: #FEF2ED;
+                }
+
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                    height: auto;
+                    margin: 10px 0;
+                }
+
+                img.pointSVGImage {
+                    height: 64px;
+                    width: 64px;
+                    margin-top: 50px;
+                    z-index: 1;
+                }
+
+                h5.pointTitle {
+                    color: #174C7E;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin: 40px 20px;
+                    z-index: 1;
+                }
+
+                div.pointDescriptionWrapper {
+                    margin-top: -260px;
+                    position: absolute;
+                    width: 320px;
+                    height: 250px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 10px;
+                    line-height: 20px;
+                    letter-spacing: 1px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: #174C7E;
+                    background-color: #F4FAFF;
+                    border-bottom-left-radius: 50%;
+                    border-bottom-right-radius: 50%;
+                    transition: 0.8s;
+
+                    h5.pointDescriptionTitle {
+                        color: #174C7E;
+                        font-size: 20px;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        line-height: 30px;
+                        text-transform: uppercase;
+                        margin: 0 auto 10px auto;
+                        width: 300px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

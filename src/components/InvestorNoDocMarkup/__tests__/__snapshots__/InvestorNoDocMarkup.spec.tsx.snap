@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InvestorNoDocMarkup component renders 1`] = `
+<section
+  class="contentWrapper"
+>
+  <article>
+    <h2>
+      What is an Investor No Doc Loan?
+    </h2>
+    <strong>
+      Allows an investor to purchase or refinance a
+                home without jumping through all the hoops of
+                providing income doucmentation. It's based solely
+                on the merit of the credit score of the client
+                and LTV. It is ideal for investors with multiple
+                properties or an investor who doesn't want to go
+                through the headache of documenting income.
+    </strong>
+    <h2>
+      Qualification Criteria
+    </h2>
+    <p>
+      <strong>
+        Self-Employed
+      </strong>
+       only
+    </p>
+    <p>
+      <strong>
+        75% LTV
+      </strong>
+       up to a loan amount of $2,000,000.00 with a FICO score as low as 660
+    </p>
+    <p>
+      <strong>
+        70% LTV
+      </strong>
+       up to a loan amount of $2,000,000.00 with a FICO score as low as 660 for 2 - 4 Units
+    </p>
+    <p>
+      <strong>
+        70% LTV
+      </strong>
+       Rate and Term and Unlimited Cash Out refinances available
+    </p>
+    <p>
+      <strong>
+        Reserve requirements
+      </strong>
+       are 6 months PITI up to a $1,500,000.00 Loan amount, anything above requires 12 months PITI
+    </p>
+    <p>
+      <strong>
+        Cash Out
+      </strong>
+       can be used as reserves
+    </p>
+    <p>
+      <strong>
+        Cash Vest
+      </strong>
+       in LLC or Corporation
+    </p>
+    <p>
+      Apply Now For True Stated Income
+    </p>
+  </article>
+</section>
+`;

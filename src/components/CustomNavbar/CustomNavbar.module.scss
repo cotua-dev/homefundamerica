@@ -1,0 +1,89 @@
+header.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    background-color: #FFFFFF;
+    z-index: 10;
+
+    nav.nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        height: 90px;
+        padding: 0 80px;
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        max-width: 1420px;
+        z-index: 2;
+
+        @media screen and (max-width: 992px) {
+            padding: 0 20px;
+        }
+
+        @media screen and (max-width: 767px) {
+            height: 60px;
+        }
+
+        div.barsWrapper {
+            display: none;
+            font-size: 28px;
+            color: #1F72C1;
+            cursor: pointer;
+            margin: 0 40px 0 10px;
+
+            @media screen and (max-width: 992px) {
+                display: block;
+            }
+
+            @media screen and (max-width: 767px) {
+                margin-right: 0;
+            }
+        }
+
+        a.logoWrapper {
+            margin-right: 40px;
+
+            @media screen and (max-width: 767px) {
+                margin: 0 auto;
+            }
+
+            img.logo {
+                height: auto;
+                width: 225px;
+            }
+        }
+
+        a.applyLink {
+            margin-left: auto;
+
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
+
+            button.applyButton {
+                background-color: #C41A2F;
+                color: #FFFFFF;
+                font-size: 24px;
+                font-weight: 500;
+                font-family: 'Inter', Helvetica, sans-serif;
+                outline: none;
+                border: 0;
+                border-radius: 8px;
+                padding: 8px 20px;
+                cursor: pointer;
+                transition: 0.8s;
+
+                &:hover {
+                    background-color: #1F72C1;
+                }
+
+                @media screen and (max-width: 992px) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NonQMPrograms component renders 1`] = `
+<section>
+  <h1>
+    Non-QM Programs
+  </h1>
+</section>
+`;

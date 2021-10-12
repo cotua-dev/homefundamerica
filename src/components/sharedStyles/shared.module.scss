@@ -1,0 +1,187 @@
+@import '../../styles/variables';
+
+section.contentWrapper {
+    width: 800px;
+    margin: 40px auto;
+
+    @media screen and (max-width: 900px) {
+        width: 100%;
+    }
+
+    article {
+        @media screen and (max-width: 900px) {
+            padding: 0 10px;
+        }
+
+        p,
+        i,
+        strong,
+        h2 {
+            font-size: 24px;
+            font-family: 'Inter', Helvetica, sans-serif;
+            line-height: 40px;
+            font-weight: 300;
+            color: #124473;
+            margin: 20px 0;
+
+            @media screen and (max-width: 900px) {
+                font-size: 18px;
+            }
+
+            @media screen and (max-width: 500px) {
+                font-size: 14px;
+                line-height: 30px;
+            }
+        }
+
+        strong,
+        h2 {
+            font-weight: 900;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: $primaryColor;
+
+            @media screen and (max-width: 900px) {
+                font-size: 34px;
+            }
+
+            @media screen and (max-width: 500px) {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+section.loanPositive,
+section.loanNegative {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        padding: 40px 10px;
+    }
+
+    div.imageWrapper {
+        img {
+            width: 500px;
+            height: auto;
+            border-radius: 10px;
+            
+            @media screen and (max-width: 600px) {
+                width: 100%;
+            }
+        }
+    }
+
+    div.contentWrapper {
+        width: 500px;
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin: 0;
+
+            @media screen and (max-width: 950px) {
+                text-align: center;
+                font-size: 24px;
+            }
+        }
+
+        p,
+        strong,
+        ul li {
+            font-size: 16px;
+
+            @media screen and (max-width: 950px) {
+                font-size: 14px;
+            }
+        }
+
+        ul {
+            padding-left: 20px;
+
+            li {
+                margin: 5px 0;
+            }
+        }
+
+        p,
+        strong {
+            @media screen and (max-width: 950px) {
+                text-align: center;
+            }
+        }
+
+        a {
+            margin-left: 5px;
+            color: $textColor;
+        }
+
+        button.applyButton {
+            border: 0;
+            border-radius: 10px;
+            color: $textColor;
+            font-size: 18px;
+            background-color: $secondaryColor;
+            padding: 15px 20px;
+            cursor: pointer;
+            transition: 0.8s;
+
+            &:hover {
+                background-color: $primaryColor;
+            }
+
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+section.loanNegative {
+    color: $primaryColor;
+}
+
+section.loanPositive {
+    background-color: $primaryColor;
+    color: $textColor;
+}
+
+section#privacyPolicySection,
+section#termsOfUseSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div.privacyPolicyContent,
+    div.termsOfUseContent {
+        max-width: 800px;
+        width: 100%;
+        padding: 0 10px;
+
+        p {
+            line-height: 24px;
+        }
+
+        a {
+            color: $primaryColor;
+            text-decoration: none;
+        }
+
+        ul {
+            padding-left: 20px;
+
+            li {
+                margin: 5px 0;
+            }
+        }
+    }
+}

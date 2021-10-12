@@ -1,0 +1,72 @@
+{
+    "name": "hubspot-site",
+    "version": "1.0.0",
+    "description": "The purpose of this site is to copy [another site](https://www.mbanc.com/) and have the questionnaires utilize API calls to Hubspot to generate leads",
+    "main": "gatsby-config.js",
+    "scripts": {
+        "dev": "gatsby develop",
+        "dev:build": "gatsby build",
+        "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
+        "serve": "gatsby serve",
+        "type-check": "tsc --noEmit",
+        "lint": "eslint . --ext .ts,.tsx",
+        "test": "jest",
+        "update-snapshots": "npm run test -- -u",
+        "coverage": "jest --coverage",
+        "clean": "gatsby clean"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jberry93/hubspot-site.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jberry93/hubspot-site/issues"
+    },
+    "homepage": "https://github.com/jberry93/hubspot-site#readme",
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.29",
+        "@fortawesome/free-solid-svg-icons": "^5.13.1",
+        "@fortawesome/react-fontawesome": "^0.1.11",
+        "animate.css": "^3.7.2",
+        "formik": "^2.1.4",
+        "framer-motion": "^1.11.1",
+        "gatsby": "^2.23.11",
+        "gatsby-plugin-manifest": "^2.4.14",
+        "gatsby-plugin-netlify": "^2.3.7",
+        "gatsby-plugin-offline": "^3.2.13",
+        "gatsby-plugin-react-helmet": "^3.3.6",
+        "gatsby-plugin-sass": "^2.3.6",
+        "gatsby-plugin-sitemap": "^2.4.7",
+        "gatsby-plugin-typescript": "^2.4.8",
+        "gatsby-source-filesystem": "^2.3.14",
+        "netlify-plugin-gatsby-cache": "^0.2.2",
+        "netlify-plugin-image-optim": "^0.3.0",
+        "node-sass": "^4.14.1",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-helmet": "^6.1.0",
+        "yup": "^0.28.5"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^5.10.1",
+        "@testing-library/react": "^10.4.2",
+        "@testing-library/react-hooks": "^3.3.0",
+        "@types/jest": "^25.2.3",
+        "@types/react-helmet": "^5.0.16",
+        "@types/react-test-renderer": "^16.9.2",
+        "@types/yup": "^0.28.3",
+        "@typescript-eslint/eslint-plugin": "^2.34.0",
+        "@typescript-eslint/parser": "^2.34.0",
+        "eslint": "^6.8.0",
+        "eslint-plugin-react": "^7.20.0",
+        "eslint-plugin-react-hooks": "^3.0.0",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^25.5.4",
+        "react-test-renderer": "^16.13.1",
+        "ts-jest": "^25.5.1",
+        "typescript": "^3.9.5"
+    }
+}

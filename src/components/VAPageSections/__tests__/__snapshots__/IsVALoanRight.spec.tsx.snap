@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IsVALoanRight Component renders 1`] = `
+<section>
+  <div>
+    <img
+      alt="Is a VA loan right image"
+    />
+  </div>
+  <div>
+    <h2>
+      Is a VA Loan Right for You?
+    </h2>
+    <p>
+      A VA loan may be right for you if you:
+    </p>
+    <ul>
+      <li>
+        
+                            Veteran who meets the eligibility requirements
+                            established by the U.S Department of Veterans
+                            Affairs*
+                        
+      </li>
+      <li>
+        Want the option of making no down payment
+      </li>
+      <li>
+        
+                            Want to save money by avoiding monthly Private
+                            Mortgage Insurance (PMI) requirements
+                        
+      </li>
+    </ul>
+  </div>
+</section>
+`;

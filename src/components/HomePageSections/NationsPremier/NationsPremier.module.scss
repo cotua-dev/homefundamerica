@@ -1,0 +1,122 @@
+section.nationsPremierSection {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 auto;
+
+    @media screen and (max-width: 900px) {
+        justify-content: center;
+    }
+
+    div.contentWrapper {
+        max-width: 848px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        @media screen and (max-width: 900px) {
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1.title {
+            font-size: 93px;
+            font-weight: bold;
+            line-height: 90px;
+            color: #1F72C1;
+            margin: 0;
+
+            @media screen and (max-width: 900px) {
+                font-size: 50px;
+                line-height: 60px;
+            }
+
+            @media screen and (max-width: 767px) {
+                font-size: 30px;
+                line-height: 40px;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+
+        h3.subtitle {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 40px;
+            color: #1F72C1;
+
+            @media screen and (max-width: 900px) {
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            @media screen and (max-width: 767px) {
+                font-size: 18px;
+                margin: 15px auto 10px auto;
+                text-align: center;
+            }
+        }
+
+        p.paragraph {
+            font-size: 16px;
+            font-weight: 400;
+            color: #1F72C1;
+
+            @media screen and (max-width: 767px) {
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+
+        a.getStartedButtonLink {
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
+
+            button.getStartedButton {
+                color: #FFFFFF;
+                background-color: #C41A2F;
+                border-radius: 8px;
+                border: 0;
+                cursor: pointer;
+                font-family: 'Inter', Helvetica, sans-serif;
+                font-size: 24px;
+                font-weight: 500;
+                padding: 10px 20px;
+                margin-top: 20px;
+                transition: 0.8s;
+
+                &:hover {
+                    background-color: #1F72C1;
+                }
+
+                @media screen and (max-width: 767px) {
+                    font-size: 18px;
+                    width: 100%;
+                    border-radius: 0;
+                }
+            }
+        }
+
+        a.phoneNumber {
+            text-decoration: none;
+            color: #1F72C1;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 30px;
+            transition: 0.8s;
+
+            &:hover {
+                color: #C41A2F;
+            }
+
+            @media screen and (max-width: 767px) {
+                font-size: 18px;
+                margin: 30px auto;
+                text-align: center;
+            }
+        }
+    }
+}

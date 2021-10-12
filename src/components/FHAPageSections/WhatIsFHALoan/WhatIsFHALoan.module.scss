@@ -1,0 +1,10 @@
+@import '../../../styles/variables';
+
+section#whatIsFHALoanSection {
+    height: 60vh;
+
+    @media screen and (max-width: 950px) {
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+}
