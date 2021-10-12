@@ -19,13 +19,13 @@ export const TermsOfUse: FunctionComponent = (): ReactElement => {
                     {`
                         This is a binding agreement. By using
                         the Internet site located at
-                    `} <Link to="/">{`https://www.manhattanbanc.com`}</Link>
+                    `} <Link to="/">{`https://www.homefundamerica.com`}</Link>
                     {`
                         (the “Website” or “Site”) or any services
                         provided in connection with the Site (the
                         “Service”), you agree to abide by these
                         Terms of Use, as they may be amended by
-                        Manhattan Banc (“Company”) from time to time
+                        Home Fund America (“Company”) from time to time
                         in its sole discretion. Company will post
                         a notice on the Site any time these Terms
                         of Use have been changed or otherwise updated.
@@ -284,11 +284,11 @@ export const TermsOfUse: FunctionComponent = (): ReactElement => {
                 </p>
                 <ul>
                     <li>{`Steve Murillo, Principle Broker`}</li>
-                    <li>{`Manhattan Banc`}</li>
+                    <li>{`Home Fund America`}</li>
                     <li>{`1147 Highland Ave, Manhattan Beach CA 90266`}</li>
                     <li><a href="tel:+18888186393">{`(888) 818-6393`}</a></li>
-                    <li><a href="mailto:admin@manhattanbancmortgage.com">
-                        {`admin@manhattanbancmortgage.com`}
+                    <li><a href="mailto:admin@homefundamerica.com">
+                        {`admin@homefundamerica.com`}
                     </a></li>
                 </ul>
                 <h3>{`Alleged Violations`}</h3>
@@ -401,7 +401,7 @@ export const TermsOfUse: FunctionComponent = (): ReactElement => {
                         means you have consented in writing to receive SMS
                         communications (text messages) from us. When
                         consenting to messaging notifications, you authorize
-                        Manhattan Banc, our assigns, successors or servicing
+                        Home Fund America, our assigns, successors or servicing
                         agents to send SMS Notifications (as defined below)
                         to any phone number provided to us, our assigns,
                         successors or service agents in connection with your
@@ -512,7 +512,7 @@ export const TermsOfUse: FunctionComponent = (): ReactElement => {
                         certain information to us. We do not claim ownership of
                         the materials you provide (including feedback and
                         suggestions), post, upload, input, or submit to
-                    `} <Link to="/">{`https://www.manhattanbanc.com`}</Link>
+                    `} <Link to="/">{`https://www.homefundamerica.com`}</Link>
                     {`
                         or any of its affiliated businesses (collectively
                         “Your Information”). However, by posting, uploading,
@@ -661,7 +661,7 @@ export const TermsOfUse: FunctionComponent = (): ReactElement => {
                 <p>
                     {`
                         All contents of Site or Service are: Copyright © 2020
-                        Manhattan Banc, 1147 Highland Ave. Manhattan Beach Ca,
+                        Home Fund America, 1147 Highland Ave. Manhattan Beach Ca,
                         90266. All rights reserved.
                     `}
                 </p>
