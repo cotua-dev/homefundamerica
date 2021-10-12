@@ -17,7 +17,7 @@ export const PrivacyPolicy: FunctionComponent = (): ReactElement => {
                 <h3>{`Agreement and Parties`}</h3>
                 <p>
                     {`
-                        Manhattan Banc (“Company,” “Manhattan Banc,”
+                        Home Fund America (“Company,” “Home Fund America,”
                         “us,” or “we”) respects the privacy of the
                         visitors to the website (“website” or “site”)
                         and of our clients. This privacy policy
@@ -57,8 +57,8 @@ export const PrivacyPolicy: FunctionComponent = (): ReactElement => {
                         exit this website and discontinue using the site.
                         If you do not agree with the terms of our privacy
                         policy and our terms of use posted at
-                    `} <Link to="/privacy-policy">{`https://manhattanbanc.com/privacy-policy`}</Link>
-                    {` and`} <Link to="/terms-of-use">{`https://manhattanbanc.com/terms-of-use`}</Link>
+                    `} <Link to="/privacy-policy">{`https://homefundamerica.com/privacy-policy`}</Link>
+                    {` and`} <Link to="/terms-of-use">{`https://homefundamerica.com/terms-of-use`}</Link>
                     {`
                         please do not provide us with personal information,
                         and leave this website. The terms of use of this
@@ -246,7 +246,7 @@ export const PrivacyPolicy: FunctionComponent = (): ReactElement => {
                 </p>
                 <ul>
                     <li>{`Vendors who provide employment verification, degree verification, title, document import, or other necessary services;`}</li>
-                    <li>{`Manhattan Banc affiliated businesses that provide quality services or products you may be interested in;`}</li>
+                    <li>{`Home Fund America affiliated businesses that provide quality services or products you may be interested in;`}</li>
                     <li>{`For any purpose to which you expressly consent;`}</li>
                     <li>{`Other third parties if necessary to protect our rights or the rights or safety of others; and`}</li>
                     <li>{`Other third parties as may be required by law or regulation.`}</li>
@@ -383,7 +383,7 @@ export const PrivacyPolicy: FunctionComponent = (): ReactElement => {
                         co-branding agreement. The sites those links can
                         take you to have their own separate privacy policy
                         and although we seek to protect the integrity of
-                        our site, Manhattan Banc is not liable for the
+                        our site, Home Fund America is not liable for the
                         content and activities of those sites. Your visits
                         and access to such websites is at your own risk.
                         Please note that those other sites may send their
@@ -406,7 +406,7 @@ export const PrivacyPolicy: FunctionComponent = (): ReactElement => {
                 <h3>{`How We Protect Personal Information`}</h3>
                 <p>
                     {`
-                        Manhattan Banc uses reasonable physical, technical,
+                        Home Fund America uses reasonable physical, technical,
                         and administrative security measures to protect
                         personal information we collect from loss, misuse,
                         unauthorized access, or improper disclosure. For
@@ -430,7 +430,7 @@ export const PrivacyPolicy: FunctionComponent = (): ReactElement => {
                 <h3>{`No Use of This Site by Persons under 18 Permitted`}</h3>
                 <p>
                     {`
-                        Manhattan Banc intends only persons who are 18
+                        Home Fund America intends only persons who are 18
                         years or older to use this website. Personal
                         registration information submitted by a person
                         under the age of 18 will not be accepted. Any
@@ -438,7 +438,7 @@ export const PrivacyPolicy: FunctionComponent = (): ReactElement => {
                         the age of 18 and gathered (for example, through
                         the use of cookies) during his or her visit
                         may be used as indicated in this policy.
-                        Manhattan Banc is committed to protecting the
+                        Home Fund America is committed to protecting the
                         privacy of children and has no intention of
                         collecting personal data from children under the
                         age of 18. We encourage parents and guardians of
@@ -500,7 +500,7 @@ export const PrivacyPolicy: FunctionComponent = (): ReactElement => {
                         verifiable consumer request via the following
                         methods: Call us at
                     `} <a href="tel:+18888186393">{`(888) 818-6393`}</a>
-                    {` or email us at `} <a href="mailto:admin@manhattanbancmortgage.com">{`admin@manhattanbancmortgage.com`}</a>
+                    {` or email us at `} <a href="mailto:admin@homefundamerica.com">{`admin@homefundamerica.com`}</a>
                 </p>
                 <p>
                     {`
@@ -509,14 +509,14 @@ export const PrivacyPolicy: FunctionComponent = (): ReactElement => {
                         You may submit a verifiable consumer request via the
                         following methods: Call us at
                     `} <a href="tel:+18888186393">{`(888) 818-6393`}</a>
-                    {` or email us at `} <a href="mailto:admin@manhattanbancmortgage.com">{`admin@manhattanbancmortgage.com`}</a>
+                    {` or email us at `} <a href="mailto:admin@homefundamerica.com">{`admin@homefundamerica.com`}</a>
                 </p>
                 <p>
                     {`
                         You have the right to opt-out of the sale of your
                         personal information. You may opt-out by emailing
                         us at
-                    `} <a href="mailto:admin@manhattanbancmortgage.com">{`admin@manhattanbancmortgage.com`}</a>
+                    `} <a href="mailto:admin@homefundamerica.com">{`admin@homefundamerica.com`}</a>
                 </p>
                 <p>
                     {`
@@ -526,7 +526,7 @@ export const PrivacyPolicy: FunctionComponent = (): ReactElement => {
                         request for deletion via the following methods: Call
                         us at
                     `} <a href="tel:+18888186393">{`(888) 818-6393`}</a>
-                    {` or email us at `} <a href="mailto:admin@manhattanbancmortgage.com">{`admin@manhattanbancmortgage.com`}</a>
+                    {` or email us at `} <a href="mailto:admin@homefundamerica.com">{`admin@homefundamerica.com`}</a>
                 </p>
                 <p>
                     {`
@@ -549,7 +549,7 @@ export const PrivacyPolicy: FunctionComponent = (): ReactElement => {
                         You have the right to opt-out of the sale of
                         your personal information. You may opt-out by
                         emailing us at
-                    `} <a href="mailto:admin@manhattanbancmortgage.com">{`admin@manhattanbancmortgage.com`}</a>
+                    `} <a href="mailto:admin@homefundamerica.com">{`admin@homefundamerica.com`}</a>
                     {` and following the directions.`}
                 </p>
                 <h3>{`Right to Request Deletion of Personal Information`}</h3>
@@ -560,7 +560,7 @@ export const PrivacyPolicy: FunctionComponent = (): ReactElement => {
                         we have collected about you. You may submit a request
                         for deletion via the following method: Call us at
                     `} <a href="tel:+18888186393">{`(888) 818-6393`}</a>
-                    {` or email us at `} <a href="mailto:admin@manhattanbancmortgage.com">{`admin@manhattanbancmortgage.com`}</a>
+                    {` or email us at `} <a href="mailto:admin@homefundamerica.com">{`admin@homefundamerica.com`}</a>
                 </p>
                 <h3>{`Update Your Contact Information`}</h3>
                 <p>
@@ -575,7 +575,7 @@ export const PrivacyPolicy: FunctionComponent = (): ReactElement => {
                         If you have any questions or comments relating
                         to our website or the privacy policy, send an
                         e-mail to
-                    `} <a href="mailto:admin@manhattanbancmortgage.com">{`admin@manhattanbancmortgage.com`}</a>
+                    `} <a href="mailto:admin@homefundamerica.com">{`admin@homefundamerica.com`}</a>
                     {`
                         or write Attn: Privacy Compliance Officer,
                         1147 Highland Ave. Manhattan Beach Ca, 90266 
