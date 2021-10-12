@@ -1,8 +1,8 @@
 module.exports = {
     siteMetadata: {
-        title: 'Manhattan Banc',
+        title: 'Home Fund America',
         author: '',
-        description: 'mbanc. positively simple.',
+        description: '',
         siteUrl: 'http://localhost:8000/', // For some reason, this triggers a reducer executed in action error if left blank
     },
     plugins: [
@@ -14,8 +14,8 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-manifest',
             options: {
-                name: 'Manhattan Banc',
-                short_name: 'mbanc',
+                name: 'Home Fund America',
+                short_name: 'homefundamerica',
                 start_url: '/',
                 background_color: '#000000',
                 theme_color: '#1F72C1',
