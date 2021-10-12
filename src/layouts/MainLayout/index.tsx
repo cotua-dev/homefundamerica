@@ -78,7 +78,7 @@ const MainLayout = (props: Props): JSX.Element =>
         <Interface.Provider value={state.interface}>
             <CustomNavbar/>
             <MobileNav/>
-            <main>
+            <main role="main">
                 {props.children}
             </main>
             <Footer/>

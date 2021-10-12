@@ -187,7 +187,7 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
 
         try {
             // Launch Hubspot POST request
-            const response = await fetch('https://mbanc-apis.azurewebsites.net/api/Hubspot', {
+            const response = await fetch(`${process.env.API_URL}/Hubspot`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
