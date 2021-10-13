@@ -1,10 +1,12 @@
+@use 'src/styles/variables';
+
 header.header {
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     margin: 0;
-    background-color: #FFFFFF;
+    background-color: variables.$white;
     z-index: 10;
 
     nav.nav {
@@ -15,7 +17,7 @@ header.header {
         height: 90px;
         padding: 0 80px;
         margin: 0 auto;
-        background-color: #FFFFFF;
+        background-color: variables.$white;
         max-width: 1420px;
         z-index: 2;
 
@@ -30,7 +32,7 @@ header.header {
         div.barsWrapper {
             display: none;
             font-size: 28px;
-            color: #1F72C1;
+            color: variables.$primaryColor;
             cursor: pointer;
             margin: 0 40px 0 10px;
 
@@ -64,8 +66,8 @@ header.header {
             }
 
             button.applyButton {
-                background-color: #C41A2F;
-                color: #FFFFFF;
+                background-color: variables.$secondaryColor;
+                color: variables.$white;
                 font-size: 24px;
                 font-weight: 500;
                 font-family: 'Inter', Helvetica, sans-serif;
@@ -74,10 +76,10 @@ header.header {
                 border-radius: 8px;
                 padding: 8px 20px;
                 cursor: pointer;
-                transition: 0.8s;
+                transition: 250ms;
 
                 &:hover {
-                    background-color: #1F72C1;
+                    background-color: variables.$primaryColor;
                 }
 
                 @media screen and (max-width: 992px) {
