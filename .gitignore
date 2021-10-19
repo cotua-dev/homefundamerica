@@ -3,4 +3,5 @@ dist
 public
 .cache
 .env.development
+.env.production
 coverage
