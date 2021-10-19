@@ -3,17 +3,19 @@ import {
     SecondChoice,
     ThirdChoice,
     FourthChoice,
-} from "./FormikWizard.interfaces";
+} from './FormikWizard.interfaces';
 
 export const firstStepChoices: FirstChoice[] = [
     {
         key: 0,
-        value: 'Purchase',
+        text: 'Purchase',
+        value: 0,
         image: '/purchase.svg',
     },
     {
         key: 1,
-        value: 'Refinance',
+        text: 'Refinance',
+        value: 1,
         image: '/refinance.svg',
     },
 ];
@@ -21,17 +23,20 @@ export const firstStepChoices: FirstChoice[] = [
 export const secondStepChoices: SecondChoice[] = [
     {
         key: 2,
-        value: 'Primary',
+        text: 'Primary',
+        value: 0,
         image: '/primary.svg',
     },
     {
         key: 3,
-        value: 'Vacation',
+        text: 'Vacation',
+        value: 1,
         image: '/vacation.svg',
     },
     {
         key: 4,
-        value: 'Investment',
+        text: 'Investment',
+        value: 2,
         image: '/investment.svg',
     },
 ];
@@ -39,22 +44,26 @@ export const secondStepChoices: SecondChoice[] = [
 export const thirdStepChoices: ThirdChoice[] = [
     {
         key: 5,
-        value: 'Single Family',
+        text: 'Single Family',
+        value: 0,
         image: '/single-family.svg',
     },
     {
         key: 6,
-        value: 'Condo',
+        text: 'Condo',
+        value: 1,
         image: '/condo.svg',
     },
     {
         key: 7,
-        value: 'Multi-Family',
+        text: 'Multi-Family',
+        value: 2,
         image: '/multi-family.svg',
     },
     {
         key: 8,
-        value: 'Townhouse',
+        text: 'Townhouse',
+        value: 3,
         image: '/townhouse.svg',
     },
 ];
@@ -62,22 +71,26 @@ export const thirdStepChoices: ThirdChoice[] = [
 export const fourthStepChoices: FourthChoice[] = [
     {
         key: 9,
-        value: 'Low (619 or less)',
+        text: 'Low (619 or less)',
+        value: 0,
         image: '/1-star.svg',
     },
     {
         key: 10,
-        value: 'Fair (620 - 679)',
+        text: 'Fair (620 - 679)',
+        value: 1,
         image: '/2-stars.svg',
     },
     {
         key: 11,
-        value: 'Good (680 - 739)',
+        text: 'Good (680 - 739)',
+        value: 2,
         image: '/3-stars.svg',
     },
     {
         key: 12,
-        value: 'Excellent (740+)',
+        text: 'Excellent (740+)',
+        value: 3,
         image: '/4-stars.svg',
     },
 ];
