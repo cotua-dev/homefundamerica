@@ -53,12 +53,12 @@ const FormikActionButtons: FunctionComponent<Props> = (props: Props): ReactEleme
         {
             return null;
         } else {
-            if (purchaseOrRefinance === 'Purchase')
+            if (purchaseOrRefinance === 0)
             {
                 return true;
             }
 
-            if (purchaseOrRefinance === 'Refinance')
+            if (purchaseOrRefinance === 1)
             {
                 return false;
             }

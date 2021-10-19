@@ -1,3 +1,5 @@
+import { PossibleChoices } from './FormikWizard.types';
+
 export interface State
 {
     canStep: boolean;
@@ -62,10 +64,10 @@ export interface InjectedField
 
 export interface Choices
 {
-    purchaseOrRefinance: 'Purchase' | 'Refinance';
-    propertyUse: 'Primary' | 'Vacation' | 'Investment';
-    propertyType: 'Single Family' | 'Condo' | 'Multi-Family' | 'Townhouse';
-    creditScore: 'Low (619 or less)' | 'Fair (620 - 679)' | 'Good (680 - 739)' | 'Excellent (740+)';
+    purchaseOrRefinance: PossibleChoices;
+    propertyUse: PossibleChoices;
+    propertyType: PossibleChoices;
+    creditScore: PossibleChoices;
 }
 
 export interface FormikValues
@@ -74,9 +76,9 @@ export interface FormikValues
     propertyUse: null | Choices['propertyUse'];
     propertyType: null | Choices['propertyType'];
     credit: null | Choices['creditScore'];
-    borrowAmount: null | string;
-    loanAmount: null | string;
-    propertyValue: null | string;
+    borrowAmount: null | number;
+    loanAmount: null | number;
+    propertyValue: null | number;
     propertyCity: null | string;
     firstName: null | string;
     lastName: null | string;
@@ -94,6 +96,7 @@ export interface Choice
 {
     key: number;
     image?: string;
+    text: string;
 }
 
 export interface FirstChoice extends Choice

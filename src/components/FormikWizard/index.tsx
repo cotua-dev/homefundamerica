@@ -44,6 +44,7 @@ import {
     Interface,
     InterfaceType,
 } from '../../contexts';
+import { PossibleChoices } from './FormikWizard.types';
 
 const FormikWizard: FunctionComponent = (): ReactElement =>
 {
@@ -174,11 +175,10 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
     }
 
     /**
-     * Formik submit event method to POST data to Hubspot
+     * Formik submit event method to POST data to Bitrix
      * 
      * @param values Formik values
      * @param resetForm Formik method to reset the form
-     * @returns void
      */
     const onSubmit = async (values: FormikValues, resetForm: Function): Promise<void> =>
     {
@@ -186,23 +186,23 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
         toggleLoading(true);
 
         try {
-            // Launch Hubspot POST request
-            const response = await fetch(`${process.env.API_URL}/Hubspot`, {
+            // Launch Bitrix POST request
+            const response = await fetch(`${process.env.API_URL}/Bitrix`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    borrowAmount: checkString(values.borrowAmount),
-                    creditScore: checkString(values.credit),
+                    borrowAmount: values.borrowAmount,
+                    creditScore: values.credit,
                     email: checkString(values.email),
                     firstName: checkString(values.firstName),
                     lastName: checkString(values.lastName),
-                    loanAmount: checkString(values.loanAmount),
+                    loanAmount: values.loanAmount,
                     phone: checkString(values.phone),
                     propertyCity: checkString(values.propertyCity),
-                    propertyType: checkString(values.propertyType),
-                    propertyUse: checkString(values.propertyUse),
-                    propertyValue: checkString(values.propertyValue),
-                    purchaseOrRefinance: checkString(values.purchaseOrRefinance),
+                    propertyType: values.propertyType,
+                    propertyUse: values.propertyUse,
+                    propertyValue: values.propertyValue,
+                    purchaseOrRefinance: values.purchaseOrRefinance,
                 }),
             });
 
@@ -245,7 +245,7 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
                      * @param value Value to set to passed formik field
                      * @returns void
                      */
-                    const setChoice = (field: keyof FormikValues, value: string | null): void =>
+                    const setChoice = (field: keyof FormikValues, value: PossibleChoices | null): void =>
                     {
                         // Set the value
                         formikProps.setFieldValue(field, value);
@@ -264,7 +264,7 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
                      * @param value Chosen value
                      * @returns Boolean indicating if value was chosen
                      */
-                    const isChosen = (field: keyof FormikValues, value: string | null): boolean => formikProps.values[field] === value;
+                    const isChosen = (field: keyof FormikValues, value: PossibleChoices | null): boolean => formikProps.values[field] === value;
 
                     /**
                      * Set a formik field's value
@@ -313,9 +313,9 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
                                                                         <img
                                                                             className={styles.choiceImage}
                                                                             src={choice.image}
-                                                                            alt={choice.value + ' image'}
+                                                                            alt={choice.text + ' image'}
                                                                         />
-                                                                        <h5 className={styles.choiceTitle}>{choice.value}</h5>
+                                                                        <h5 className={styles.choiceTitle}>{choice.text}</h5>
                                                                     </div>
                                                                 ))
                                                             }
@@ -363,9 +363,9 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
                                                                         <img
                                                                             className={styles.choiceImage}
                                                                             src={choice.image}
-                                                                            alt={choice.value + ' image'}
+                                                                            alt={choice.text + ' image'}
                                                                         />
-                                                                        <h5 className={styles.choiceTitle}>{choice.value}</h5>
+                                                                        <h5 className={styles.choiceTitle}>{choice.text}</h5>
                                                                     </div>
                                                                 ))
                                                             }
@@ -413,9 +413,9 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
                                                                         <img
                                                                             className={styles.choiceImage}
                                                                             src={choice.image}
-                                                                            alt={choice.value + ' image'}
+                                                                            alt={choice.text + ' image'}
                                                                         />
-                                                                        <h5 className={styles.choiceTitle}>{choice.value}</h5>
+                                                                        <h5 className={styles.choiceTitle}>{choice.text}</h5>
                                                                     </div>
                                                                 ))
                                                             }
@@ -463,9 +463,9 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
                                                                         <img
                                                                             className={styles.choiceImage}
                                                                             src={choice.image}
-                                                                            alt={choice.value + ' image'}
+                                                                            alt={choice.text + ' image'}
                                                                         />
-                                                                        <h5 className={styles.choiceTitle}>{choice.value}</h5>
+                                                                        <h5 className={styles.choiceTitle}>{choice.text}</h5>
                                                                     </div>
                                                                 ))
                                                             }
@@ -919,11 +919,11 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
                         let totalSteps: number = choiceFields.length;
 
                         // Check which fields to add to total
-                        if (formikProps.values.purchaseOrRefinance === 'Purchase')
+                        if (formikProps.values.purchaseOrRefinance === 0)
                         {
                             // Add number of purchase fields to total
                             totalSteps = totalSteps + purchaseFields.length;
-                        } else if (formikProps.values.purchaseOrRefinance === 'Refinance')
+                        } else if (formikProps.values.purchaseOrRefinance === 1)
                         {
                             // Add number of refinance fields to total
                             totalSteps = totalSteps + refinanceFields.length;
@@ -966,8 +966,8 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
                                     <Form>
                                         <AnimatePresence initial={false} custom={state.stepNumber}>
                                             {choiceFields.map((field: InjectedField): ReactElement | undefined => field.field())}
-                                            {formikProps.values.purchaseOrRefinance === 'Purchase' && purchaseFields.map((field: InjectedField): ReactElement | undefined => field.field())}
-                                            {formikProps.values.purchaseOrRefinance === 'Refinance' && refinanceFields.map((field: InjectedField): ReactElement | undefined => field.field())}
+                                            {formikProps.values.purchaseOrRefinance === 0 && purchaseFields.map((field: InjectedField): ReactElement | undefined => field.field())}
+                                            {formikProps.values.purchaseOrRefinance === 1 && refinanceFields.map((field: InjectedField): ReactElement | undefined => field.field())}
                                         </AnimatePresence>
                                     </Form>
                                     <FormikActionButtons
