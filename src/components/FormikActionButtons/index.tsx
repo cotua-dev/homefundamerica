@@ -16,6 +16,8 @@ import {
 const FormikActionButtons: FunctionComponent<Props> = (props: Props): ReactElement =>
 {
     const { isLoading } = useContext<InterfaceType>(Interface);
+    const emailRegex: RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const phoneE164Regex: RegExp = /^\+[1-9]\d{1,14}$/;
 
     /**
      * Check to see if formik field has a value
@@ -74,8 +76,9 @@ const FormikActionButtons: FunctionComponent<Props> = (props: Props): ReactEleme
     {
         let allowance = false;
         const purchaseOrRefinance = checkPurchaseOrRefinanceValue();
+        const { stepNumber, formikProps } = props;
 
-        switch (props.stepNumber)
+        switch (stepNumber)
         {
             case 1:
                 allowance = checkFormikValue('purchaseOrRefinance')
@@ -95,7 +98,7 @@ const FormikActionButtons: FunctionComponent<Props> = (props: Props): ReactEleme
         {
             if (purchaseOrRefinance)
             {
-                switch (props.stepNumber)
+                switch (stepNumber)
                 {
                     case 5:
                         // allowance = checkBorrowAmount();
@@ -108,15 +111,15 @@ const FormikActionButtons: FunctionComponent<Props> = (props: Props): ReactEleme
                         allowance = checkFormikValue('firstName') && checkFormikValue('lastName');
                         break;
                     case 8:
-                        allowance = checkFormikValue('email');
+                        allowance = checkFormikValue('email') && formikProps.values.email !== null && emailRegex.test(formikProps.values.email);
                         break;
                     case 9:
-                        allowance = checkFormikValue('phone');
+                        allowance = checkFormikValue('phone') && formikProps.values.phone !== null && phoneE164Regex.test(formikProps.values.phone);
                         break;
                 }
             } else
             {
-                switch (props.stepNumber)
+                switch (stepNumber)
                 {
                     case 5:
                         // allowance = checkLoanAmount();
@@ -132,10 +135,10 @@ const FormikActionButtons: FunctionComponent<Props> = (props: Props): ReactEleme
                         allowance = checkFormikValue('firstName') && checkFormikValue('lastName');
                         break;
                     case 9:
-                        allowance = checkFormikValue('email');
+                        allowance = checkFormikValue('email') && formikProps.values.email !== null && emailRegex.test(formikProps.values.email);
                         break;
                     case 10:
-                        allowance = checkFormikValue('phone');
+                        allowance = checkFormikValue('phone') && formikProps.values.phone !== null && phoneE164Regex.test(formikProps.values.phone);
                         break;
                 }
             }

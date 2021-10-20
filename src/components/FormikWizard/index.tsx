@@ -5,8 +5,11 @@ import React, {
     useState,
     useContext,
     ChangeEvent,
+    KeyboardEvent,
 } from 'react';
 import { Link } from 'gatsby';
+import { InputMask, AnyMaskedOptions } from 'imask';
+import { IMaskInput } from 'react-imask';
 import {
     Formik,
     FormikProps,
@@ -100,6 +103,7 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
         stepNumber: (previousState.stepNumber > 1)
             ? --previousState.stepNumber
             : previousState.stepNumber,
+        canStep: true,
     });
 
     /**
@@ -209,24 +213,12 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
             // Check if the response was successful and update UI accordingly
             response.status === 200 ? toggleIsSuccess(true) : toggleIsSuccess(false);
 
-            // If 400 (Bad request) is the status code...
-            if (response.status === 400) {
-                // Get Hubspot's response message object
-                const data: PostResponseData = await response.json();
-                const responseMessageJSON: HubspotResponseJSON = JSON.parse(data.Message);
-
-                // Check Hubspot's response message object status code and update UI accordingly
-                if (responseMessageJSON.StatusCode === 409) {
-                    setErrorMessage('This contact already exists');
-                    toggleIsError(true);
-                }
-            }
-
             // Remove loading spinner and reset the form
             toggleLoading(false);
             resetForm();
-        } catch(err) {
+        } catch(err: unknown) {
             console.error({ onSubmitError: err });
+            throw err as Error;
         }
     }
 
@@ -272,7 +264,13 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
                      * @param event React synthetic change event to input element
                      * @param field Name of formik field to update
                      */
-                    const setField = (event: ChangeEvent<HTMLInputElement>, field: keyof FormikValues): void => formikProps.setFieldValue(field, event.target.value);
+                    const setField = (event: ChangeEvent<HTMLInputElement>, field: keyof FormikValues): void => {
+                        // Set the formik field with the passed value
+                        formikProps.setFieldValue(field, event.target.value);
+
+                        // Set `canStep` so we can proceed
+                        toggleCanStep(true);
+                    };
 
                     /**
                      * Array of fields with choices
@@ -504,12 +502,23 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
                                                         <h3 className={styles.stepTitle}>
                                                             How much are you looking to borrow?
                                                         </h3>
-                                                        <input
+                                                        <IMaskInput
                                                             className={styles.field}
-                                                            type="number"
-                                                            min="0"
-                                                            value={checkNumber(formikProps.values.borrowAmount)}
-                                                            onChange={(event: ChangeEvent<HTMLInputElement>): void => setField(event, 'borrowAmount')}
+                                                            mask={Number}
+                                                            radix="."
+                                                            min={0}
+                                                            scale={2}
+                                                            thousandsSeparator=","
+                                                            onAccept={(value: string, mask: InputMask<AnyMaskedOptions>): void => {
+                                                                // Convert unmasked value to number
+                                                                const borrowAmountNumber: number = Number(mask.unmaskedValue);
+
+                                                                // Set the field value to the unmasked number
+                                                                formikProps.setFieldValue('borrowAmount', borrowAmountNumber);
+
+                                                                // Set `canStep` so we can proceed
+                                                                toggleCanStep(true);
+                                                            }}
                                                         />
                                                     </motion.div>
                                                 )
@@ -661,11 +670,11 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
                                                         <h3 className={styles.stepTitle}>
                                                             What number can we reach you at?
                                                         </h3>
-                                                        <input
+                                                        <IMaskInput
                                                             className={styles.field}
                                                             type="tel"
-                                                            value={checkString(formikProps.values.phone)}
-                                                            onChange={(event: ChangeEvent<HTMLInputElement>): void => setField(event, 'phone')}
+                                                            mask="+10000000000"
+                                                            onAccept={(value: string, mask: InputMask<AnyMaskedOptions>): void => formikProps.setFieldValue('phone', value)}
                                                         />
                                                     </motion.div>
                                                 )
@@ -701,12 +710,20 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
                                                         <h3 className={styles.stepTitle}>
                                                             What is your loan amount?
                                                         </h3>
-                                                        <input
+                                                        <IMaskInput
                                                             className={styles.field}
-                                                            type="number"
-                                                            min="0"
-                                                            value={checkNumber(formikProps.values.loanAmount)}
-                                                            onChange={(event: ChangeEvent<HTMLInputElement>): void => setField(event, 'loanAmount')}
+                                                            mask={Number}
+                                                            radix="."
+                                                            min={0}
+                                                            scale={2}
+                                                            thousandsSeparator=","
+                                                            onAccept={(value: string, mask: InputMask<AnyMaskedOptions>) => {
+                                                                // Convert unmasked value to number
+                                                                const loanAmountNumber: number = Number(mask.unmaskedValue);
+
+                                                                // Set the field value to the unmasked number
+                                                                formikProps.setFieldValue('loanAmount', loanAmountNumber);
+                                                            }}
                                                         />
                                                     </motion.div>
                                                 )
@@ -736,12 +753,20 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
                                                         <h3 className={styles.stepTitle}>
                                                             What is the current property value?
                                                         </h3>
-                                                        <input
+                                                        <IMaskInput
                                                             className={styles.field}
-                                                            type="number"
-                                                            min="0"
-                                                            value={checkNumber(formikProps.values.propertyValue)}
-                                                            onChange={(event: ChangeEvent<HTMLInputElement>): void => setField(event, 'propertyValue')}
+                                                            mask={Number}
+                                                            radix="."
+                                                            min={0}
+                                                            scale={2}
+                                                            thousandsSeparator=","
+                                                            onAccept={(value: string, mask: InputMask<AnyMaskedOptions>) => {
+                                                                // Convert unmasked value to number
+                                                                const propertyValueNumber: number = Number(mask.unmaskedValue);
+
+                                                                // Set the field value to the unmasked number
+                                                                formikProps.setFieldValue('propertyValue', propertyValueNumber);
+                                                            }}
                                                         />
                                                     </motion.div>
                                                 )
@@ -892,11 +917,11 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
                                                         <h3 className={styles.stepTitle}>
                                                             What number can we reach you at?
                                                         </h3>
-                                                        <input
+                                                        <IMaskInput
                                                             className={styles.field}
                                                             type="tel"
-                                                            value={checkString(formikProps.values.phone)}
-                                                            onChange={(event: ChangeEvent<HTMLInputElement>): void => setField(event, 'phone')}
+                                                            mask="+10000000000"
+                                                            onAccept={(value: string, mask: InputMask<AnyMaskedOptions>): void => formikProps.setFieldValue('phone', value)}
                                                         />
                                                     </motion.div>
                                                 )
@@ -944,6 +969,7 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
                         stepNumber: (previousState.canStep && (previousState.stepNumber < calculateTotalSteps()))
                             ? ++previousState.stepNumber
                             : previousState.stepNumber,
+                        canStep: false,
                     });
 
                     /**
@@ -952,6 +978,16 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
                      * @returns void
                      */
                     const onNext = (): void => setState(onNextAction);
+
+                    /**
+                     * Prevent the form from being submitted by pressing the `Enter` key
+                     * @param keyEvent React synthetic keyboard event object
+                     */
+                    function onKeyDown(keyEvent: KeyboardEvent<HTMLFormElement>): void {
+                        if ((keyEvent.charCode || keyEvent.keyCode) === 13) {
+                            keyEvent.preventDefault();
+                        }
+                    }
 
                     return (
                         <>
@@ -963,7 +999,7 @@ const FormikWizard: FunctionComponent = (): ReactElement =>
                                             totalSteps={calculateTotalSteps()}
                                         />
                                     }
-                                    <Form>
+                                    <Form onKeyDown={onKeyDown}>
                                         <AnimatePresence initial={false} custom={state.stepNumber}>
                                             {choiceFields.map((field: InjectedField): ReactElement | undefined => field.field())}
                                             {formikProps.values.purchaseOrRefinance === 0 && purchaseFields.map((field: InjectedField): ReactElement | undefined => field.field())}
